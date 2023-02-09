@@ -1,0 +1,162 @@
+
+/* 
+* Author: Tyler Scotti
+* Description: This is my first Arduino program. It's a simple program that utilizes a 
+* SMA42056L 7 segment display and displays the number 0-9 while waiting one second inbetween each number
+* Parts Used: 7 Segment Display, Arudio Uno Rev 3, 12 jumper wires
+*
+*/ 
+
+int LEDA = 2;
+int LEDB = 3;
+int LEDC = 4;
+int LEDD = 5;
+int LEDE = 6;
+int LEDF = 7;
+int LEDG = 8;
+
+
+void setup() {
+   pinMode(LEDA, OUTPUT);
+   pinMode(LEDB, OUTPUT);
+   pinMode(LEDC, OUTPUT);
+   pinMode(LEDD, OUTPUT);
+   pinMode(LEDE, OUTPUT);
+   pinMode(LEDF, OUTPUT);
+   pinMode(LEDG, OUTPUT);
+}
+
+
+void loop() {
+  //Makes a 0
+  digitalWrite(LEDA, HIGH);    
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+
+  //Makes a 1
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off 
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+
+    //Makes a 2
+  digitalWrite(LEDA, HIGH);    
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDG, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+
+    //Makes a 3
+  digitalWrite(LEDA, HIGH);    
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+
+  //Makes a 4
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off  
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
+
+    //Makes a 5
+  digitalWrite(LEDA, HIGH);            
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);            
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
+
+    //Makes a 6       
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
+
+    //Makes a 7
+  digitalWrite(LEDA, HIGH);    
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
+
+    //Makes a 8
+  digitalWrite(LEDA, HIGH);    
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDD, HIGH);
+  digitalWrite(LEDE, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
+
+    //Makes a 9
+  digitalWrite(LEDA, HIGH);    
+  digitalWrite(LEDB, HIGH);          
+  digitalWrite(LEDC, HIGH);
+  digitalWrite(LEDF, HIGH);
+  digitalWrite(LEDG, HIGH);
+  delay(1000); //Waits 1 second before turing LEDs off
+  digitalWrite(LEDA, LOW);    
+  digitalWrite(LEDB, LOW);          
+  digitalWrite(LEDC, LOW);
+  digitalWrite(LEDD, LOW);
+  digitalWrite(LEDE, LOW);
+  digitalWrite(LEDF, LOW);
+  digitalWrite(LEDG, LOW);
+
+}
+
+
